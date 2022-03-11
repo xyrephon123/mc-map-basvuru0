@@ -1,0 +1,40 @@
+<html>  
+  <head>
+    <title> MC MAP BAŞVURU </title>
+  </head>
+  <link rel="stylesheet" href="style.css"/>
+      
+  <h3> MAPLERİN KABUL EDİLMESİ BİRKAÇ GÜN SÜREBİLİR </h3>
+
+<div class="formbox">  
+<form id="contactform" action="https://formspree.io/f/xrgjkwlj" method="POST">
+    <textarea name="message" placeholder="İsmin"></textarea>
+    <textarea name="message" placeholder="Mail adresin (Haritanızın kabul edilip edilmediğini söylemek için)"></textarea>
+    <input type="hidden" name="_subject" value="Yeni başvuru" />
+    <textarea name="message" placeholder="Harita linki (Dosya sitelerine yükleyip linki yazın)"></textarea>
+    <textarea name="message" placeholder="Harita hakkında"></textarea>
+    <textarea name="message" placeholder="Sürüm"></textarea>
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" value="Gönder">
+</form>
+</div>
+  
+  <script type="text/javascript">
+function IE(e) {
+     if (navigator.appName == "Microsoft Internet Explorer" && (event.button == "2" || event.button == "3")) {
+          alert('UYARI');
+          return false;
+     }
+}
+function NS(e) {
+     if (document.layers || (document.getElementById && !document.all)) {
+          if (e.which == "2" || e.which == "3") {
+               alert('Sağ tık engel aktiftir.');
+               return false;
+          }
+     }
+}
+document.onmousedown=IE;document.onmouseup=NS;document.oncontextmenu=new Function("return false");
+</script>
+  
+</html>
